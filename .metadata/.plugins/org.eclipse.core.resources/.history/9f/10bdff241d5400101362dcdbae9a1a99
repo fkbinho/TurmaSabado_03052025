@@ -1,0 +1,50 @@
+package laco_repeticao;
+
+import java.util.Scanner;
+
+public class LacoWhile {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		double salario = 2000.0;
+		int ano = 2025;
+		
+		while(ano < 2030) {
+			salario = salario + (salario * 0.10); //10%
+			System.out.println("Ano: " + ano);
+			System.out.println("Salario: R$ " + salario);
+			ano++;
+		}
+		
+		int numero = 5;
+		while (numero > 0) {
+			System.out.println(numero);
+			numero--;
+		}
+		
+//		valor de cada corrida
+		double valorPorCorrida = 0.0;
+		double valorTotal = 0.0;
+//		numero de corridas (não sei no momento)
+		while (true) {
+			System.out.println("Qual o valor da corrida: " );
+			System.out.println("Digite 0 para sair.");
+			valorPorCorrida = scan.nextDouble();
+			
+			if (valorPorCorrida == 0) {
+				break;
+			}
+			
+//			valor total 
+			valorTotal = valorTotal + valorPorCorrida;
+//			valorTotal += valorPorCorrida;
+			
+		}
+		
+//		mostrar o valor total
+		System.out.println("Valor total: R$ " + valorTotal);
+
+	}
+
+}

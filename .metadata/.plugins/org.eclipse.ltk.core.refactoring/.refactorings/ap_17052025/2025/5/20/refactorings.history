@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;operador_atribuicao&apos; to &apos;operadores&apos;&#x0D;&#x0A;- Original project: &apos;au_17052025&apos;&#x0D;&#x0A;- Original element: &apos;au_17052025/src/operador_atribuicao&apos;&#x0D;&#x0A;- Renamed element: &apos;au_17052025/src/operadores&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;operador_atribuicao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;operador_atribuicao" name="operadores" qualified="false" references="true" stamp="1747484643826" textual="false" version="1.0"/>
+</session>

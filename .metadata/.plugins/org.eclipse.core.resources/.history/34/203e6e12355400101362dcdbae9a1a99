@@ -1,0 +1,18 @@
+package poo;
+
+public class Pessoa {
+
+	String nome;
+	int idade;
+	String profissao;
+	
+	void estudar() {
+		System.out.println(nome + " está estudando.");
+	}
+	
+	void correr() {
+		System.out.println("Está correndo...");
+	}
+	
+}
+	

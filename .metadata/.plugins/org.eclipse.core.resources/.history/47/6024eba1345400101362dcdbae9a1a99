@@ -1,0 +1,34 @@
+package poo;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Pessoa kleber = new Pessoa();
+ 
+		kleber.nome = "Francikleber";
+		kleber.idade = 28;
+		kleber.profissao = "Desenvolvedor";
+		
+		System.out.println("Informações de Kleber:");
+		System.out.println(kleber.nome);
+		System.out.println(kleber.idade);
+		System.out.println(kleber.profissao);
+		
+		kleber.estudar();
+		
+		System.out.println("-------------");
+		
+		Pessoa tadeu = new Pessoa();
+		
+		System.out.println("Informações de Tadeu:");
+		tadeu.nome = "Tadeu Souza";
+		tadeu.idade = 33;
+		tadeu.profissao = "Analista";
+		
+		System.out.println(tadeu.nome);
+		System.out.println(tadeu.idade);
+		System.out.println(tadeu.profissao);
+	}
+
+}

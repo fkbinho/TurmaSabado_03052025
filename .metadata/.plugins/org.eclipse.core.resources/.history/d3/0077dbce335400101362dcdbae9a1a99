@@ -1,0 +1,26 @@
+package poo;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Pessoa pessoa1 = new Pessoa();
+ 
+		pessoa1.nome = "Kleber";
+		pessoa1.idade = 28;
+		pessoa1.profissao = "Desenvolvedor";
+		
+		System.out.println(pessoa1.nome);
+		System.out.println(pessoa1.idade);
+		System.out.println(pessoa1.profissao);
+		
+		String nome2 = "Tadeu";
+		int idade2 = 28;
+		String profissao2 = "Analista";
+		
+		System.out.println("Pessoa 2: " + nome2);
+		System.out.println("Idade 2: " + idade2);
+		System.out.println("Profissao 2: " + profissao2);
+	}
+
+}

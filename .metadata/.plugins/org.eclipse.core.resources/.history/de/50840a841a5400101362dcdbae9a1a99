@@ -1,0 +1,19 @@
+package laco_repeticao;
+
+public class LacoWhile {
+
+	public static void main(String[] args) {
+		
+		double salario = 2000.0;
+		int ano = 2025;
+		
+		while(ano < 2030) {
+			salario = salario + (salario * 0.10); //10%
+			System.out.println("Ano: " + ano);
+			System.out.println("Salario: R$ " + salario);
+			ano++;
+		}
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package lista_arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Lista {
+
+	public static void main(String[] args) {
+		
+		List<String> listaDeCompras = new ArrayList<>();
+
+		listaDeCompras.add("Feijão");
+		listaDeCompras.add("Arroz");
+		listaDeCompras.add("Café");
+		listaDeCompras.add("Queijo");
+		
+		System.out.println(listaDeCompras);
+		
+	}
+
+}

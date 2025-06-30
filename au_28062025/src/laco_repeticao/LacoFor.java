@@ -1,0 +1,54 @@
+package laco_repeticao;
+
+import java.util.Scanner;
+
+public class LacoFor {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Laço for usando break:");
+		for (int i = 0; i < 10; i++) {
+			if (i == 4) {
+				break;
+			}
+			System.out.print(i + " ");
+		}
+
+		System.out.println("\nLaço for usando continue:");
+		for (int i = 0; i < 10; i++) {
+			if (i == 4) {
+				continue;
+			}
+			System.out.print(i + " ");
+		}
+
+		double valorPorCorrida = 0.0;
+		double valorTotal = 0.0;
+
+		System.out.println("\nQuantas corridas você quer somar:");
+		int quantidadeDeCorridas = scan.nextInt();
+
+		for (int i = 1; i <= quantidadeDeCorridas; i++) {
+
+			System.out.printf("Qual o valor da corrida #%d:%n", i);
+			System.out.println("Digite 0 para sair.");
+			valorPorCorrida = scan.nextDouble();
+
+			if (valorPorCorrida == 0) {
+				break;
+			}
+
+//				valor total 
+			valorTotal = valorTotal + valorPorCorrida;
+//				valorTotal += valorPorCorrida;
+		}
+
+//			mostrar o valor total
+		System.out.println("Valor total: R$ " + valorTotal);
+		System.out.println("Você fez " + quantidadeDeCorridas + " corridas.");
+
+	}
+
+}

@@ -1,0 +1,10 @@
+INDEX VERSION 1.134+C:\AulaSabado03052025\.metadata\.plugins\org.eclipse.jdt.core
+2494530976.index
+1568733331.index
+3716212791.index
+3244888103.index
+1777180579.index
+1009453604.index
+80621225.index
+1865797976.index
+3272791978.index

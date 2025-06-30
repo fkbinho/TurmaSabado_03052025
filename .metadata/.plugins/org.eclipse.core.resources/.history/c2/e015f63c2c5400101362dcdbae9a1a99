@@ -1,0 +1,36 @@
+package lista_arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Lista {
+
+	public static void main(String[] args) {
+		
+		List<String> listaDeCompras = new ArrayList<>();
+
+		listaDeCompras.add("Feijão");
+		listaDeCompras.add("Arroz");
+		listaDeCompras.add("Café");
+		listaDeCompras.add("Queijo");
+		
+		System.out.println(listaDeCompras);
+		
+		for(int i = 0; i < listaDeCompras.size(); i++) {
+			System.out.println(listaDeCompras.get(i));
+		}
+		
+		boolean contem = listaDeCompras.contains("Macarrão");
+		System.out.println(contem);
+		
+		listaDeCompras.add("Carne");
+		listaDeCompras.add("Presunto");
+		listaDeCompras.add("Biscoito");
+		
+		System.out.println(listaDeCompras);
+		
+		listaDeCompras.remove(6);
+		System.out.println(listaDeCompras);
+	}
+
+}

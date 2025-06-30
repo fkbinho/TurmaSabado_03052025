@@ -1,0 +1,67 @@
+package lista_arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Lista {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		List<String> listaDeCompras = new ArrayList<>();
+
+		listaDeCompras.add("Feijão");
+		listaDeCompras.add("Arroz");
+		listaDeCompras.add("Café");
+		listaDeCompras.add("Queijo");
+		
+		System.out.println(listaDeCompras);
+		
+		for(int i = 0; i < listaDeCompras.size(); i++) {
+			System.out.println(listaDeCompras.get(i));
+		}
+		
+		boolean contem = listaDeCompras.contains("Macarrão");
+		System.out.println(contem);
+		
+		listaDeCompras.add("Carne");
+		listaDeCompras.add("Presunto");
+		listaDeCompras.add("Biscoito");
+		
+		System.out.println(listaDeCompras);
+		
+		listaDeCompras.remove(2);
+		System.out.println(listaDeCompras);
+		
+		listaDeCompras.set(5, "Bolacha");
+		System.out.println(listaDeCompras);
+		
+
+		if(listaDeCompras.contains("macarão")) {
+			System.out.println("Ja contem macarrão na lista.");
+		} else {
+			listaDeCompras.add("macarrão");
+		}
+		
+		System.out.println(listaDeCompras.contains("MACARRÃO".toLowerCase()));
+		System.out.println(listaDeCompras);
+		
+		listaDeCompras.add(2,"Peito de Peru");
+		System.out.println(listaDeCompras);
+
+		List<Integer> numeroInteiros = new ArrayList<>();
+		
+		for(int i = 0; i < 5; i++) {
+			numeroInteiros.add(i + 2);
+		}
+		
+		System.out.println(numeroInteiros);
+		
+		numeroInteiros.add(scan.nextInt());
+		System.out.println(numeroInteiros);
+
+	}
+
+}
